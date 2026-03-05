@@ -1,0 +1,58 @@
+.imagem-animada {
+  /* Nome da animação, duração, tipo, repetição */
+  animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+  from {
+    transform: translateY(0); /* Posição inicial */
+  }
+  to {
+    transform: translateY(-20px); /* Move 20px para cima */
+  }
+}
+
+
+
+@keyframes slide {
+  from { margin-left: 0%; }
+  to { margin-left: 50%; }
+}
+
+.imagem-animada {
+  animation: slide 3s linear infinite alternate;
+}
+
+
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.imagem-animada {
+  animation: girar 5s linear infinite;
+}
+
+
+.imagem-animada:hover {
+  transform: scale(1.2); /* Aumenta o tamanho */
+  transition: transform 0.3s ease; /* Suaviza a transição */
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+

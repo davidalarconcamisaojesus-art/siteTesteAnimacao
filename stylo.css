@@ -1,0 +1,13 @@
+body {
+  background-image: url('caminho/para/sua-imagem.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Opcional: mantém a imagem fixa ao rolar */
+}
+
+
+
+
+
+

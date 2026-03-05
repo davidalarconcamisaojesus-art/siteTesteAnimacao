@@ -1,0 +1,316 @@
+.imagem1{
+    width: 150px;
+    height: 150px;
+    
+}
+nav{
+    display: flex;
+    justify-content:  space-between;
+    background-color: rgb(85, 20, 72);
+    width: 1338px;
+    position: relative;
+    top: 220px;
+    
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    position: relative;
+    left: 930px;
+    top: -5px;
+}
+li{
+    color: rgb(38, 184, 18);
+}
+h1 {
+    font-size: 17px; /* Altere para o tamanho desejado */
+    color: rgb(8, 211, 93);
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.filha2{
+    position: relative;
+    left: 875px;
+    top: 165px;
+    background-color: rgb(108, 36, 113);
+    width: 74px;
+    height: 20px;
+    border-radius: 20%;
+    
+}
+p{
+    color: rgba(228, 78, 195, 0.818);
+}
+.imagem{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    left: 1px;
+    top: -16px;
+    border-radius: 20%;
+}
+.filha3{
+    background-color: rgb(196, 55, 175);
+    width: 300px;
+    height: 480px;
+    position: relative;
+    top: -520px;
+}
+body {
+  background-image: url('caminho/para/sua-imagem.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Opcional: mantém a imagem fixa ao rolar */
+}
+.filha{
+    background-color: rgb(20, 9, 93);
+    border-radius: 28%;
+    position: relative;
+    top: 198px;
+    left: 40px;
+    width: 158px;
+}
+.container {
+    overflow: hidden; /* Esconde o texto quando ele sai da tela */
+    width: 100%;
+}
+
+.texto-movendo {
+    position: relative;
+    animation: moverTexto 15s linear infinite; /* Nome, duração, tipo, repetição */
+}
+
+@keyframes moverTexto {
+    0% { transform: translateX(100%); } /* Começa fora da tela à direita */
+    100% { transform: translateX(-100%); } /* Termina fora da tela à esquerda */
+}
+.texto-movendo{
+    color: rgb(13, 211, 33);
+}
+a{
+    text-decoration: none;
+}
+.filha4{
+    position: relative;
+    left: 150px;
+}
+.slider-container {
+  width: 100%;
+  height: 400px;           /* Altura fixa desejada */
+  overflow: hidden;        /* Esconde o que sobra lateralmente */
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(100% * 5);   /* Ajuste conforme o número total de <img> */
+  animation: rolarDireto 15s linear infinite; /* 'linear' mantém a velocidade constante */
+}
+
+.slider-track img {
+  width: 100vw;            /* Cada imagem ocupa a largura da tela */
+  height: 400px;           /* Mesma altura do container */
+  object-fit: cover;       /* AJUSTE DIREITO: Preenche sem distorcer */
+  flex-shrink: 0;
+}
+
+/* Animação que move o trilho */
+@keyframes rolarDireto {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-300%); } /* Move o equivalente às fotos originais */
+}
+.slider-track img {
+  width: 100vw;        /* Largura total da tela */
+  height: 400px;       /* Sua altura definida */
+  
+  /* MÁGICA AQUI */
+  object-fit: contain; /* Mostra a imagem INTEIRA sem cortar nada */
+  background-color: #135428; /* Opcional: fundo preto para preencher sobras */
+  
+  flex-shrink: 0;
+}
+.loader {
+  border: 8px solid #c42280; /* Cor de fundo da borda */
+  border-top: 8px solid #16c439; /* Cor da parte que gira */
+  border-radius: 50%; /* Torna o elemento um círculo */
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Rotação infinita e constante */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loader{
+    position: relative;
+    left: 900px;
+    top: 160px;
+    width: 100px;
+    height: 100px;
+    
+
+    
+}
+.loader1 {
+  border: 8px solid #c42280; /* Cor de fundo da borda */
+  border-top: 8px solid #16c439; /* Cor da parte que gira */
+  border-radius: 50%; /* Torna o elemento um círculo */
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Rotação infinita e constante */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loader2 {
+  border: 8px solid #c42280; /* Cor de fundo da borda */
+  border-top: 8px solid #16c439; /* Cor da parte que gira */
+  border-radius: 50%; /* Torna o elemento um círculo */
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Rotação infinita e constante */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loader3 {
+  border: 8px solid #c42280; /* Cor de fundo da borda */
+  border-top: 8px solid #16c439; /* Cor da parte que gira */
+  border-radius: 50%; /* Torna o elemento um círculo */
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Rotação infinita e constante */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loader3{
+    position: relative;
+    left: 800px;
+    top: -230px;
+    width: 70px;
+    height: 70px;
+}
+.loader1{
+    position: relative;
+    left: 770px;
+    top: 200px;
+    width: 40px;
+    height: 40px;
+}
+.loader2{
+    position: relative;
+    left: 780px;
+    top: 10px;
+    width: 200px;
+    height: 200px;
+}
+.estrada {
+  width: 100%;
+  overflow: hidden; /* Esconde a seta quando ela sai da área */
+  border-bottom: 2px dashed #b419a7; /* Apenas para parecer um caminho */
+  padding: 20px 0;
+}
+
+.seta-viajante {
+  display: inline-block;
+  font-size: 40px;
+  color: #9ae522;
+  /* Nome | Duração | Velocidade | Repetição */
+  animation: caminhar 4s linear infinite;
+}
+
+@keyframes caminhar {
+  0% {
+    transform: translateX(-50px); /* Começa fora da tela à esquerda */
+  }
+  100% {
+    transform: translateX(100vw); /* Vai até o final da tela à direita */
+  }
+}
+.estrada{
+    position: relative;
+    top: 255px;
+}
+.pista {
+  width: 100%;
+  overflow: hidden; /* Evita que a barra de rolagem apareça */
+  background: #11d61b;
+  padding: 20px 0;
+}
+
+.quadrado {
+  width: 50px;
+  height: 50px;
+  background-color: #b419a7;
+  /* Nome | Duração | Ritmo | Repetição */
+  animation: ate-o-fim 4s linear infinite;
+}
+
+@keyframes ate-o-fim {
+  0% {
+    transform: translateX(-50px); /* Começa um pouco antes de aparecer */
+  }
+  100% {
+    transform: translateX(100vw); /* Vai exatamente até o final da tela */
+  }
+}
+.pista{
+    position: relative;
+    top: 350px;
+}
+.imagemA{
+    height: 100px;
+    width: 1338px;
+    position: relative;
+    top: 290px;
+}
+
+.imagemB{
+    height: 90px;
+    width: 1338px;
+    position: relative;
+    top: 295px;
+}
+.imagemC{
+    height: 90px;
+    width: 1338px;
+    position: relative;
+    top: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
